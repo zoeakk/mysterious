@@ -1,7 +1,7 @@
 # Mysterious
 分布式压测平台，前端Vue3+TypeScript，后端SpringBoot-2.3.12，压测引擎JMeter-5.5，支持JMeter的分布式压测，管理，执行，报告，日志等。因为设计，开发，测试都是自己，一些功能优化需求也是根据自己的使用来改进，目前主要优先考虑正确性和实用性，未来通过大模型生成JMX脚本也在考虑当中。
 
-https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
+- 演示视频：[点击这里](https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589)
 
 ## 🔥 经验总结
 - [1. JMeter分布式压测](https://lihuia.com/jmeter%e5%88%86%e5%b8%83%e5%bc%8f%e5%8e%8b%e6%b5%8b/)
@@ -15,10 +15,16 @@ https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
 
 
 ## 🔥 平台模块
+gitee地址：
+- 后端服务：https://gitee.com/leyvel/mysterious 
+- 前端服务：https://gitee.com/leyvel/mysterious-web
+- 压测引擎：https://gitee.com/leyvel/mysterious-jmeter
+- 平台试用：http://101.43.119.176:1234 (demo/demo或者新注册个用户)
+
+github地址：
 - 后端服务：https://github.com/100ZZ/mysterious
 - 前端服务：https://github.com/100ZZ/mysterious-web
 - 压测引擎：https://github.com/100ZZ/mysterious-jmeter
-- 平台试用：http://101.43.119.176:1234 (demo/demo或者新注册个用户)
 
 ## 🔥 测试流程
 - 本地上传：本地能运行的测试，上传测试的JMX，CSV，JAR等依赖，平台均可直接处理和执行，日志，报告
@@ -48,11 +54,11 @@ https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
 > 离线镜像：https://pan.baidu.com/s/128k3uiUvaKf0vgbD-BO28Q?pwd=e9qy 提取码: e9qy
 
 1. 平台部署
->- git clone https://github.com/100ZZ/mysterious.git
+>- git clone https://gitee.com/leyvel/mysterious.git
 >- cd mysterious/docker
 >- sh init.sh amd64|arm64 （参数：x86传amd64，arm传arm64；init.sh可自定义平台数据目录）
 >- cd ./mysterious
->- git clone https://github.com/100ZZ/mysterious-jmeter.git
+>- git clone https://gitee.com/leyvel/mysterious-jmeter.git
 >- docker-compose up -d
 2. 访问平台
 >- 平台访问：http://xx.xx.xx.xx:1234
@@ -70,7 +76,7 @@ https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
 ### ⚙️ Master节点：平台二进制部署方式
 下面以CentOS7为例介绍下安装步骤
 1. 前端部署
->- git clone https://github.com/100ZZ/mysterious-web.git
+>- git clone https://gitee.com/leyvel/mysterious-web.git
 >- cd mysterious-web
 >- npm install
 >- npm run build (生成dist，如果不想build，mysterious的docker里有最新的dist)
@@ -90,14 +96,14 @@ https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
 >- redis.conf可自行下载，或者docker目录下有
 
 3. 后端部署
->- git clone https://github.com/100ZZ/mysterious.git
+>- git clone https://gitee.com/leyvel/mysterious.git
 >- mvn -f pom.xml clean install package -Dmaven.test.skip=true
 >- mkdir -p /opt/mysterious/mysterious-data
 >- mkdir -p /opt/mysterious/running
 >- cp docker/mysterious.jar /opt/mysterious/running/
 >- cp docker/service.sh /opt/mysterious/running/
 >- cd /opt/mysterious
->- git clone https://github.com/100ZZ/mysterious-jmeter.git
+>- git clone https://gitee.com/leyvel/mysterious-jmeter.git
 >- sh /opt/mysterious/running/service.sh restart
 4. 访问平台
 >- 平台访问：http://xx.xx.xx.xx:1234
@@ -112,7 +118,7 @@ https://github.com/user-attachments/assets/514c7ab6-08a6-4576-9af1-9dafe60a0589
 如果需要分布式压测，找到和Master节点网络互通的Slave节点进行部署，最好是局域网，否则网络开销太大；无论Master节点是二进制还是Docker-Compose部署，Slave节点部署方式都如下
 >- mkdir /opt/mysterious
 >- cd /opt/mysterious
->- git clone https://github.com/100ZZ/mysterious-jmeter.git
+>- git clone https://gitee.com/leyvel/mysterious-jmeter.git
 >- 如果之前有一些测试用例，可以页面节点管理，先点击一下节点同步，会将Master节点用例数据都同步到Slave节点，然后启用Slave节点即可
 >- 只要有Slave节点启用，压测都会是分布式压测，如果全都禁用，压测就只是Master单节点压测
 >- 具体Slave节点的目录结构都是可配置的，具体可以参考配置管理页面
