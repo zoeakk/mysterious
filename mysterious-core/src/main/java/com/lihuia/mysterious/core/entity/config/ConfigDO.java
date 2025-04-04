@@ -4,10 +4,7 @@ import com.lihuia.mysterious.core.entity.base.BaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-/**
- * @author lihuia.com
- * @date 2023/4/1 上午9:29
- */
+
 
 @Data
 @EqualsAndHashCode(callSuper = true)

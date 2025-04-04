@@ -6,10 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-/**
- * @author lihuia.com
- * @date 2023/3/31 11:41 PM
- */
+
 
 @Component
 public class CRUDEntity<T extends BaseDO> {

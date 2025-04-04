@@ -3,10 +3,7 @@ package com.lihuia.mysterious.core.entity.jmx.sample.dubbo;
 import com.lihuia.mysterious.core.entity.base.BaseDO;
 import lombok.Data;
 
-/**
- * @author lihuia.com
- * @date 2024/10/21 11:00
- */
+
 
 @Data
 public class DubboAttachmentArgsDO extends BaseDO<Long> {

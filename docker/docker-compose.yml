@@ -32,7 +32,7 @@ services:
     ports:
       - "16379:6379"
     privileged: true
-    command: >  # 注意多个命令时的写法
+    command: >  # 注意多个命令时的写法，bash-c执行一系列命令，用字符串的形式
       bash -c "echo 'vm.overcommit_memory = 1' >> /etc/sysctl.conf && redis-server /etc/redis/redis.conf"
 
   mysterious-nginx:
@@ -48,10 +48,10 @@ services:
     ports:
       - "1234:1234"
       - "9998:9998"
-
+#100zz/mysterious:${MYSTERIOUS_VERSION}
   mysterious:
     container_name: mysterious
-    image: 100zz/mysterious:${MYSTERIOUS_VERSION}
+    image: crpi-0k05wk3jdatinndt.cn-chengdu.personal.cr.aliyuncs.com/zoeakk/mysterious:${MYSTERIOUS_VERSION}
     restart: always
     environment:
       TZ: Asia/Shanghai

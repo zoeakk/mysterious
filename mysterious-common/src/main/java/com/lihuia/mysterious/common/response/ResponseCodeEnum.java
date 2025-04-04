@@ -1,9 +1,6 @@
 package com.lihuia.mysterious.common.response;
 
-/**
- * @author lihuia.com
- * @date 2023/3/29 11:02 PM
- */
+
 
 public enum ResponseCodeEnum {
 

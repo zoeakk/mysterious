@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalDateTime;
 
-/**
- * @author lihuia.com
- * @date 2023/3/29 10:08 PM
- */
+
 
 public class BaseVO<P> {
 

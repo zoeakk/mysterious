@@ -4,4 +4,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: 100zz/mysterious:${MYSTERIOUS_VERSION}
+    image: crpi-0k05wk3jdatinndt.cn-chengdu.personal.cr.aliyuncs.com/zoeakk/mysterious:${MYSTERIOUS_VERSION}

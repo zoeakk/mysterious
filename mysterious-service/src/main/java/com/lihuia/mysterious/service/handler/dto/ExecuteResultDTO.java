@@ -4,10 +4,7 @@ import com.lihuia.mysterious.service.redis.RedisService;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-/**
- * @author lihuia.com
- * @date 2023/4/14 10:05 PM
- */
+
 
 @Data
 @EqualsAndHashCode(callSuper = true)

@@ -5,10 +5,7 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- * @author lihuia.com
- * @date 2024/9/6 10:23
- */
+
 
 @Data
 public class HttpDO extends BaseDO<Long> {

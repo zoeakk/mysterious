@@ -11,10 +11,6 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author lihuia.com
- * @date 2023/3/28 11:23 PM
- */
 
 @Configuration
 public class AuthConfiguration implements WebMvcConfigurer {

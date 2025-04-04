@@ -5,10 +5,7 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * @author lihuia.com
- * @date 2023/4/10 5:01 PM
- */
+
 
 @Component
 public class MysteriousTimeUtil {

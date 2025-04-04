@@ -13,10 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author lihuia.com
- * @date 2023/4/1 上午10:30
- */
+
 
 @RestController
 @Api(tags = "配置管理")

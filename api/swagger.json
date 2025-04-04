@@ -3,15 +3,9 @@
   "info": {
     "description": "Rest接口",
     "version": "1.0",
-    "title": "Mysterious压测平台后端服务集成Swagger",
-    "contact": {
-      "name": "lihui",
-      "url": "https://lihuia.com",
-      "email": "maple@lihuia.com"
-    }
+    "title": "高并发自动化测试平台后端服务集成Swagger"
   },
-  "host": "127.0.0.1:4321",
-  "basePath": "/",
+
   "tags": [
     {
       "name": "CSV文件管理",

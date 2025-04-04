@@ -5,10 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author lihuia.com
- * @date 2023/3/27 8:06 PM
- */
+
 
 public class BaseDO<P> implements Serializable {
 
