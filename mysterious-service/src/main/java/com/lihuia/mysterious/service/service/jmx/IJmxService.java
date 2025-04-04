@@ -8,10 +8,7 @@ import com.lihuia.mysterious.core.vo.user.UserVO;
 import org.apache.commons.exec.CommandLine;
 import org.springframework.web.multipart.MultipartFile;
 
-/**
- * @author lihuia.com
- * @date 2023/4/1 下午4:38
- */
+
 
 public interface IJmxService {
 

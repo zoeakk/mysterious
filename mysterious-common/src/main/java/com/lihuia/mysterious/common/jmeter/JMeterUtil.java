@@ -18,10 +18,7 @@ import java.nio.channels.FileChannel;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * @author lihuia.com
- * @date 2023/4/10 11:45 AM
- */
+
 
 @Component
 public class JMeterUtil {

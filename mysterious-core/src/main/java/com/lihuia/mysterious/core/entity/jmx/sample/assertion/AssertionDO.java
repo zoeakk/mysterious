@@ -3,10 +3,7 @@ package com.lihuia.mysterious.core.entity.jmx.sample.assertion;
 import com.lihuia.mysterious.core.entity.base.BaseDO;
 import lombok.Data;
 
-/**
- * @author lihuia.com
- * @date 2024/9/23 09:47
- */
+
 
 @Data
 public class AssertionDO extends BaseDO<Long> {

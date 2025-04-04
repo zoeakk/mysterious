@@ -2,10 +2,7 @@ package com.lihuia.mysterious.common.exception;
 
 import com.lihuia.mysterious.common.response.ResponseCodeEnum;
 
-/**
- * @author lihuia.com
- * @date 2023/3/29 11:02 PM
- */
+
 
 public class MysteriousException extends RuntimeException {
 

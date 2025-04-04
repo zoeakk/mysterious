@@ -3,10 +3,7 @@ package com.lihuia.mysterious.core.vo.testcase;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-/**
- * @author lihuia.com
- * @date 2024/9/19 15:08
- */
+
 
 @ApiModel
 public class JMeterResultVO {
