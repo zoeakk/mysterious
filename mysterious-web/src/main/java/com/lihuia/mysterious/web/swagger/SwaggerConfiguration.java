@@ -19,7 +19,6 @@ import java.util.List;
 
 
 
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration {
@@ -55,14 +54,11 @@ public class SwaggerConfiguration {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 // 标题
+                return (new ApiInfoBuilder())
                 .title("高并发自动化测试平台后端服务集成Swagger")
-                // 接口描述
                 .description("Rest接口")
-                // 联系方式
-                .contact(new Contact("闵婷","https://github.com/zoeakk","maintain2002@163.com"  ))
-                // 版本信息
+                .contact(new Contact("闵婷", "https://github.com/zoeakk", "maintain2002@163.com"))
                 .version("1.0")
-                // 构建
                 .build();
     }
 }
